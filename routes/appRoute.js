@@ -16,7 +16,7 @@ router.post('/login', function(req, res, next) {
     req.body.username === 'admin@rajasthan.gov.in' &&
     req.body.password === 'abc@123'
   ) {
-    res.status(200).json({ message: 'Login Successful' });
+    res.redirect('/admin/pending');
   } else {
     res.render('500', {
       type: 'Login_ERROR',

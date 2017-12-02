@@ -11,6 +11,7 @@ module.exports = {
   OTP_EXPIRY: 20,
   ERRORS: {
     OTP_ERROR: 'OTP error',
+    FETCH_ERROR: 'fetch error',
   },
   ENUMS: {
     CONDITION: {

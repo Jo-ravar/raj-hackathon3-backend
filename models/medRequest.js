@@ -11,6 +11,10 @@ const userSchema = new Schema(
       type: String,
       required: true,
     },
+    total: {
+      type: Number,
+      required: true,
+    },
     condition: {
       type: String,
       required: true,

@@ -24,11 +24,13 @@ router.get('/sendOtp/:bid', function(req, res, next) {
   });
 });
 
-router.get('/verifyOtp/:bid/:otp', function(req, res, next) {
-  var bId = req.params.bid;
-  var otp = req.params.otp;
-  otpLib.verifyOtp(bId, otp, function(errorInFetch, fetchedInstance) {
-    res.status(200).json(fetchedInstance);
+router.post('/verifyOtp', function(req, res, next) {
+  otpLib.verifyOtp(req.body, function(errorInFetch, fetchedInstance) {
+    if (errorInFetch) {
+      res.status(500).json(errorInFetch);
+    } else {
+      res.status(200).json(fetchedInstance);
+    }
   });
 });
 module.exports = router;

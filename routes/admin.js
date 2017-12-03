@@ -19,10 +19,7 @@ router.get('/pending', function(req, res, next) {
         message: errInFetch.msg,
       });
     } else {
-      // console.log(fetchRequest);
-      // console.log(fetchRequest.length);
       res.render('adminDashboard', { medicines: fetchRequest });
-      //res.send(fetchRequest);
     }
   });
 });

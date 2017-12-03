@@ -5,7 +5,7 @@ var otpLib = require('../lib/otpHandler');
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
-  res.send('respond with a resource');
+  res.render('index2');
 });
 
 router.post('/addDetail', function(req, res, next) {
@@ -31,6 +31,17 @@ router.post('/verifyOtp', function(req, res, next) {
     } else {
       res.status(200).json(fetchedInstance);
     }
+  });
+});
+
+router.post('/getDetails', function(req, res, next) {
+  var searchKey = req.body.searchKey;
+  console.log(searchKey);
+  userLib.getNewMedicineList(searchKey, function(
+    errorInFetch,
+    fetchedInstance
+  ) {
+    res.render('userSearch', { medicines: fetchedInstance });
   });
 });
 module.exports = router;

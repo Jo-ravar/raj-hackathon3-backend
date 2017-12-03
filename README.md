@@ -28,5 +28,11 @@ This folder consist of all the routes which will be used here.
 
 **6. views**
 
-This folder contains all the view file made in handlebars,
+This folder contains all the view file made in handlebars.
+
+## Screenshots
+
+1. Admin workflow -1
+![hack32](https://user-images.githubusercontent.com/20628218/33521146-de14ef26-d7ef-11e7-84a4-37ecdb8fc9b7.gif)
+
 

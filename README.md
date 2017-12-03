@@ -3,3 +3,30 @@ Following repository contains the project structure for the medicine scheme port
 Govt. Portal and they will need to verify their request by entering bhamashah Id and the OTP that they will receive on their mobile which is connected
 with that ID. The portal also consist of an Admin Portal where govt. can approve or decline any new request. Admin can also track the no. of request which
 was created over this month and amount left in the budget under scheme.
+
+## Project Structure
+
+**1. bin**
+
+Following folder consist of a `www` file which is used to start the server and connect to port.
+
+**2. config**
+
+This folder consist of constants file which is used all over the project.
+
+**3. lib**
+
+This folder consist of file which is used for performing database operation.
+
+**4. models**
+
+This folder consist of all the database collection files.
+
+**5. routes**
+
+This folder consist of all the routes which will be used here.
+
+**6. views**
+
+This folder contains all the view file made in handlebars,
+

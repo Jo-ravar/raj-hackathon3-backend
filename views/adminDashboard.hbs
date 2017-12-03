@@ -42,22 +42,29 @@
                                     <thead>
                                         <tr>
                                             <th width="15%" style="text-align:center">Bhamashah ID</th>
-                                            <th width="45%" style="text-align:center">Issue</th>
+                                            <th width="35%" style="text-align:center">Issue</th>
                                             <th width="10%" style="text-align:center">Condition</th>
                                             <th width="10%" style="text-align:center">No. Of Medicines</th>
                                             <th width="10%" style="text-align:center">Total</th>
                                             <th width="10%" style="text-align:left">Status</th>
+                                            <th width="10%" style="text-align:left">Actions</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         {{#each medicines}}
                                         <tr>
-                                            <td width="2%">{{bhamashah_id}}</td>
-                                            <td width="2%" style="text-align:center">{{health_issue}}</td>
-                                            <td width="2%" style="text-align:center">{{condition}}</td>
-                                            <td width="2%" style="text-align:center">{{medicine_details.length}}</td>
-                                            <td width="15%" style="text-align:center">{{status}}</td>
+                                            <td width="15%">{{bhamashah_id}}</td>
+                                            <td width="25%" style="text-align:center">{{health_issue}}</td>
+                                            <td width="10%" style="text-align:center">{{condition}}</td>
+                                            <td width="10%" style="text-align:center">{{medicine_details.length}}</td>
+                                            <td width="10%" style="text-align:center">{{status}}</td>
                                             <td width="10%" style="text-align:center">{{total}}</td>
+                                            <td width="20%" style="text-align:center">
+                                                <button class="btn" style="font-size: 1em;">Approve
+                                                </button>
+                                                <button class="btn" style="font-size: 1em;">Decline
+                                                </button>
+                                            </td>
                                             {{/each}}
                                     </tbody>
                                 </table>

@@ -35,4 +35,8 @@ This folder contains all the view file made in handlebars.
 1. Admin workflow -1
 ![hack32](https://user-images.githubusercontent.com/20628218/33521146-de14ef26-d7ef-11e7-84a4-37ecdb8fc9b7.gif)
 
+2. User search flow
+![hack33](https://user-images.githubusercontent.com/20628218/33521428-d9aaec4e-d7f7-11e7-9eda-d74d602539a6.gif)
+
+
 

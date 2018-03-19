@@ -54,7 +54,27 @@
                                             {{/each}}
                                     </tbody>
                                 </table>
-                                <button type="submit" class="btn" style="margin: 1em">Generate Request</button>
+                                <button type="submit" class="btn" style="margin: 1em" data-toggle="modal" data-target="#myModal">Generate Request</button>
+
+                                <div id="myModal" class="modal fade" role="dialog">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                <h4 class="modal-title">ENTER YOUR BHAMSHAH ID</h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <input type="text" placeholder="Bhamashah Id" class="form-control" name="searchKey" id="top-search" style="width: 90%; font-size: 2em; margin: 0.5em;">
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">Send OTP</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
                             </div>
                         </div>
                     </div>

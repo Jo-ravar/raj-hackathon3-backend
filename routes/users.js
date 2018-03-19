@@ -36,7 +36,6 @@ router.post('/verifyOtp', function(req, res, next) {
 
 router.post('/getDetails', function(req, res, next) {
   var searchKey = req.body.searchKey;
-  console.log(searchKey);
   userLib.getNewMedicineList(searchKey, function(
     errorInFetch,
     fetchedInstance

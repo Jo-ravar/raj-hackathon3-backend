@@ -7,7 +7,7 @@ module.exports = {
       'mongodb://localhost:27017/hackathon3',
   },
   HEALTH_BEARER_KEY:
-    '959f349c4e25a5a3136aa6134b07e7ef76c401626013d7be69e75087ef216afe',
+    'Bearer 959f349c4e25a5a3136aa6134b07e7ef76c401626013d7be69e75087ef216afe',
   OTP_AUTH_KEY: '186133AyQXQfeIYD5a1fb8a3',
   SENDER_ID: 'RAJGOV',
   OTP_EXPIRY: 20,

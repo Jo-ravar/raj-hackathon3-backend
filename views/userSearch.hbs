@@ -48,8 +48,7 @@
                                             <td width="10%" style="text-align:center">{{manufacturer}}</td>
                                             <td width="10%" style="text-align:center">
                                                 <form action="">
-                                                    <input type="checkbox" name="select" value="select">
-                                                </form>
+                                                    <input type="checkbox" name="select" value="select[{{@index}}]" onclick="onCheckChange();" </form>
                                             </td>
                                             {{/each}}
                                     </tbody>
@@ -112,6 +111,24 @@
                 radioClass: 'iradio_square-green',
             });
         });
+
+
+        function onCheckChange() {
+            var values = new Array();
+            $.each($('input[type="checkbox"]:checked'), function () {
+                var data = $(this).parents('tr:eq(0)');
+                values.push({ 'names': $(data).find('td:eq(0)').text(), 'price': $(data).find('td:eq(1)').text(), 'manufacturer': $(data).find('td:eq(2)').text() });
+            });
+            var dataString = JSON.stringify(values);
+            setCookie("data", dataString, 30);
+        }
+
+        function setCookie(cdata, cvalue, exdays) {
+            var d = new Date();
+            d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+            var expires = "expires=" + d.toUTCString();
+            document.cookie = cdata + "=" + cvalue + ";" + expires + ";path=/";
+        }
     </script>
 
 </body>
